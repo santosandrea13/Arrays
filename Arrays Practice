@@ -1,1 +1,69 @@
+/*  Student: Andrea Santos
+ Teacher: Mrs. McCaffery 
+ Class : ICS3U
+ Title: My Array
+ Function of the program :To print out ten random numbers*/
+import java.util.*;
+  
+public class MyArray
+{ // start class
+  public static void main(String[] args)
+  { // start main
+    
+    Scanner myInput = new Scanner(System.in);
+    Random number = new Random();//opens new random number
+    //variables
+    int[] List = new int[10]; //array with 10 slots
+    int i; // loop index, from zero
+    
+    for (i = 0; i < 10; i++) 
+    {
+      //defines numofsticks as 3 digits from 0, with a +1 to avoid 0 sticks
+//defines that the numbers go from 1-100
+      List[i] = number.nextInt(100)+1; //the 1 signifies that it is starting at 1 and not 0
+    }
+    
+    System.out.println("this is the list of the random numbers from 1 to 100.");
+    for (i = 0; i < 10; i++) 
+    {
+     //defines numofsticks as 3 digits from 0, with a +1 to avoid 0 sticks
+//defines totalsticks as the random number from 1-3 times 4, with a plus 1 to make it an odd number
+          System.out.println(List[i]);
+    }
+   
+    myInput.close(); // this will eliminate the warning becuase you need to close the scanner you opened.
+  } // end of main
+} // end of class
 
+_______________________________________________________________________
+
+
+/*  Student: Andrea Santos
+ Teacher: Mrs. McCaffery 
+ Class : ICS3U
+ Title: My String
+ Function of the program :Toask for then print out ten different names*/
+import java.util.*;
+  
+public class MyString
+{ // start class
+  public static void main(String[] args)
+  { // start main
+    
+    Scanner myInput = new Scanner(System.in);
+       //variables
+    String [] List = new String [10]; //array with 10 slots
+    int i; // loop index, from zero
+    
+    for (i = 0; i < 10; i++) 
+    {
+       System.out.println("Input a name?");
+       List[i] = myInput.nextLine();
+    }
+    
+    System.out.println("These are the names listed.");
+    for (i = 0; i < 10; i++) 
+    {
+ 
+          System.out.println(List[i]);
+    }
