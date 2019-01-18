@@ -1,1 +1,21 @@
-
+/*  Student: Andrea Santos
+ Teacher: Mrs. McCaffery 
+ Class : ICS3U
+ Title: My Array
+ Function of the program :To print out ten random numbers*/
+//import java.util.*;
+  
+public class duplicateArray 
+{ // start class
+  public static void main(String[] args)
+  { // start main
+        int num = 13;
+        int num2 = 22;
+  //call the method
+   duplicate(num, num2);
+  }
+public static void duplicate(int x, int y)
+{
+System.out.println(+x+ " and \n" +y);
+}
+}
