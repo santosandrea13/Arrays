@@ -7,15 +7,49 @@
   
 public class duplicateArray 
 { // start class
-  public static void main(String[] args)
-  { // start main
-        int num = 13;
-        int num2 = 22;
-  //call the method
-   duplicate(num, num2);
-  }
-public static void duplicate(int x, int y)
+   public static void main(String[] args)
+  { // start main 
+    //variables
+    int[] List = new int[] {10,20,30,40,50};
+    
+    int i; // loop index, from zero
+       
+     duplicate(List);
+    
+    System.out.println("original");    
+   
+    for (i = 0; i < 5; i++) 
+    {
+     //defines numofsticks as 3 digits from 0, with a +1 to avoid 0 sticks
+//defines totalsticks as the random number from 1-3 times 4, with a plus 1 to make it an odd number
+         
+          System.out.println(List[i]);
+    }
+
+    duplicate(List);
+   
+    //myInput.close(); // this will eliminate the warning becuase you need to close the scanner you opened.
+  
+} // end of main
+
+public static void duplicate(int[] List)
 {
-System.out.println(+x+ " and \n" +y);
+  int[] CopyList = new int[5]; //array with 10 slots
+  int i;
+   for (i = 0; i < 5; i++) 
+    {
+     CopyList[i]  = List[i] ;
+    }
+  
+   System.out.println("copy");  
+  for (i = 0; i < 5; i++) 
+    {
+     //defines numofsticks as 3 digits from 0, with a +1 to avoid 0 sticks
+//defines totalsticks as the random number from 1-3 times 4, with a plus 1 to make it an odd number
+          System.out.println(CopyList[i]);
+    }
+  
+  //return CopyList[];
 }
-}
+
+} // end of class
