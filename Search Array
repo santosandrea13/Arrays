@@ -1,1 +1,36 @@
-
+/*  Student: Andrea Santos
+ Teacher: Mrs. McCaffery 
+ Class : ICS3U
+ Title: My Array
+ Function of the program :To print out ten random numbers*/
+import java.util.*;
+  
+public class searchArray
+{ // start class
+  public static void main(String[] args)
+  { // start main
+    
+    Scanner myInput = new Scanner(System.in);
+    String[] word = {"super"};
+    String letter;
+    
+    System.out.println("Guess any letter in the word");
+   //letter = myInput.next().charAt(0);
+    letter = myInput.nextLine();
+    int i; // loop index, from zero
+    
+    for (i = 0; i < 5; i++) 
+    {
+      if (word[i] == letter)
+      {
+          System.out.println("yeap that is the letter");
+      }
+      else
+      {
+        System.out.println("nope  that is not the letter");
+      }
+    }
+  
+    myInput.close(); // this will eliminate the warning becuase you need to close the scanner you opened.
+  } // end of main
+} // end of class
